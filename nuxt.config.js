@@ -14,6 +14,10 @@ export default {
             charset: "utf-8",
 
         }],
-    }
+    },
+
+    router: {
+        prefetchLinks: false
+    },
 
 }
