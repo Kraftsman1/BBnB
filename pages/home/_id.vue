@@ -14,6 +14,7 @@
         <div style="height: 800px; width: 800px;" ref="map"></div>
     </div>
 </template>
+
 <script>
 
 import homes from '~/data/homes'
@@ -24,9 +25,13 @@ export default {
         return {
             title: this.home.title,
             script: [{
-                src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyAlnRWuqrkL5sIa1ybTTe9bOGVIzdKeRs0&libraries=places",
+                src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyAlnRWuqrkL5sIa1ybTTe9bOGVIzdKeRs0&libraries=places&callback=initMap",
                 hid: "map",
                 defer: true,
+                skip: process.client && window.mapLoaded
+            }, {
+            innerHTML: "window.initMap = function(){ window.mapLoaded = true }",
+            hid: "map-init",
             }]
         }
     },
