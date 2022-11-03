@@ -1,1 +1,10 @@
 node_modules
+npm-debug.log
+
+# Local Dev
+.env
+.development
+*.env
+.env.local
+.env.development.local
+.DS_Store

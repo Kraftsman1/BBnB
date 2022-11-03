@@ -25,7 +25,7 @@ export default {
         return {
             title: this.home.title,
             script: [{
-                src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyAlnRWuqrkL5sIa1ybTTe9bOGVIzdKeRs0&libraries=places&callback=initMap",
+                src: process.env.MAPS_API_KEY_LINK,
                 hid: "map",
                 defer: true,
                 skip: process.client && window.mapLoaded
