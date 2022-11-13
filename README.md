@@ -173,9 +173,7 @@ Distributed under the MIT License. See `LICENSE.txt` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Asigri Shamsu-Deen Al-Heyr
-[Twitter](https://twitter.com/the_Spartan_Dev)
-[Mail](mailto:shamsasigri@gmail.com)
+Asigri Shamsu-Deen Al-Heyr - [Twitter](https://twitter.com/the_Spartan_Dev) - [Mail](mailto:shamsasigri@gmail.com)
 
 Project Link: [https://github.com/Kraftsman1/BBnB](https://github.com/Kraftsman1/BBnB)
 
