@@ -72,11 +72,11 @@
 
 ### Built With
 
-* [![Nuxt][Nuxtjs]][Nuxt-url]
-* [![Vue][Vue.js]][Vue-url]
-* [![MongoDB][MongoDB]][Mongo-url]
-* [![TailwindCSS][TailwindCSS]][Tailwind-url]
-* [![JQuery][JQuery.com]][JQuery-url]
+[![Nuxt][Nuxtjs]][Nuxt-url]
+[![Vue][Vue.js]][Vue-url]
+[![MongoDB][MongoDB]][Mongo-url]
+[![TailwindCSS][TailwindCSS]][Tailwind-url]
+[![JQuery][JQuery.com]][JQuery-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
