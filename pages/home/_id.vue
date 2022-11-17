@@ -24,15 +24,6 @@ export default {
     head() {
         return {
             title: this.home.title,
-            script: [{
-                src: "https://maps.googleapis.com/maps/api/js?key=AIzaSyAlnRWuqrkL5sIa1ybTTe9bOGVIzdKeRs0&libraries=places&callback=initMap",
-                hid: "map",
-                async: true,
-                skip: process.client && window.mapLoaded
-            }, {
-            innerHTML: "window.initMap = function(){ window.mapLoaded = true }",
-            hid: "map-init", 
-            }]
         }
     },
 
@@ -43,28 +34,11 @@ export default {
     },
 
     methods: {
-        showMap() {
-            const mapOptions = {
-                center: new window.google.maps.LatLng(this.home._geoloc.lat, this.home._geoloc.lng),
-                zoom: 18,
-                disableDefaultUI: true,
-                zommControl: true,
-            }
-
-            const map = new window.google.maps.Map(this.$refs.map, mapOptions)
-            const position = new window.google.maps.LatLng(this.home._geoloc.lat, this.home._geoloc.lng)
-            const marker = new window.google.maps.Marker({ position })
-            marker.setMap(map)
-        }
+        
     },
 
     mounted() {
-        const timer = setInterval(() => {
-            if (window.mapLoaded) {
-                clearInterval(timer)
-                this.showMap()
-            }
-        }, 200)
+        this.$maps.showMap(this.$refs.map, this.home._geoloc.lat, this.home._geoloc.lng)
     },
 
     created() {

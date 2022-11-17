@@ -20,4 +20,6 @@ export default {
         prefetchLinks: false
     },
 
+    plugins:[ '~/plugins/maps.client.js' ]
+
 }
