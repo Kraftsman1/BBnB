@@ -20,6 +20,9 @@ export default {
         prefetchLinks: false
     },
 
-    plugins:[ '~/plugins/maps.client.js' ]
+    plugins: [
+        "~/plugins/maps.client",
+        "~/plugins/dataApi"
+    ]
 
 }
